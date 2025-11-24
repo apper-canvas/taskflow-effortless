@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "name": "Work",
+    "color": "#6366F1",
+    "taskCount": 4,
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Development",
+    "color": "#8B5CF6",
+    "taskCount": 2,
+    "createdAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Personal",
+    "color": "#F59E0B",
+    "taskCount": 3,
+    "createdAt": "2024-01-01T00:00:00Z"
+  }
+]

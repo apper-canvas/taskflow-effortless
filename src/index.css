@@ -1,0 +1,106 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'react-toastify/dist/ReactToastify.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background-color: #f9fafb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Toast Overrides */
+.Toastify__toast-container {
+  width: auto;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  margin-bottom: 8px;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+}
+
+/* Animation Classes */
+.task-enter {
+  animation: slide-in 300ms ease-out;
+}
+
+.task-exit {
+  animation: fade-out 200ms ease-out forwards;
+}
+
+/* Custom Checkbox Animation */
+.checkbox-animate {
+  transform: scale(1);
+  transition: transform 150ms ease-out;
+}
+
+.checkbox-animate:hover {
+  transform: scale(1.05);
+}
+
+.checkbox-animate.checked {
+  animation: scale-in 200ms ease-out;
+}
+
+.checkmark-path {
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  animation: draw-check 300ms ease-out forwards;
+}
