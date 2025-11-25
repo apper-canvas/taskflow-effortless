@@ -19,7 +19,7 @@ const Sidebar = ({ lists, onNewList, className }) => {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
             <ApperIcon name="CheckSquare" size={18} className="text-white" />
           </div>
-<h1 className="font-semibold text-xl text-gray-900">TaskFlow Pro</h1>
+<h1 className="font-semibold text-xl text-gray-900">TaskFlow Pro Plus</h1>
         </div>
       </div>
 
